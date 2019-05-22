@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "3005d33e-2a1b-4176-9222-3eda93ce89b8",
+		"name": "聊天",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "登录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:6666/user/login?userAccount=15256728515&userPassword=111111",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "userAccount",
+							"value": "15256728515"
+						},
+						{
+							"key": "userPassword",
+							"value": "111111"
+						}
+					]
+				},
+				"description": "聊天登录"
+			},
+			"response": []
+		},
+		{
+			"name": "获取用户信息",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "119.3.73.42:6666/user/getUserInfo?token=9ZKHJ2WV",
+					"host": [
+						"119",
+						"3",
+						"73",
+						"42"
+					],
+					"port": "6666",
+					"path": [
+						"user",
+						"getUserInfo"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "9ZKHJ2WV"
+						}
+					]
+				},
+				"description": "获取用户信息"
+			},
+			"response": []
+		},
+		{
+			"name": "修改用户信息",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:6666/user/amendUserInfo?token=9ZKHJ2WV&nickName=小楼",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"user",
+						"amendUserInfo"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "9ZKHJ2WV"
+						},
+						{
+							"key": "nickName",
+							"value": "小楼",
+							"description": "昵称"
+						},
+						{
+							"key": "phone",
+							"value": "",
+							"description": "手机号",
+							"disabled": true
+						},
+						{
+							"key": "userName",
+							"value": null,
+							"description": "姓名",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": null,
+							"description": "邮箱",
+							"disabled": true
+						},
+						{
+							"key": "headPortrait",
+							"value": null,
+							"description": "头像",
+							"disabled": true
+						},
+						{
+							"key": "shengXiao",
+							"value": null,
+							"description": "生肖",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": null,
+							"description": "年龄",
+							"disabled": true
+						},
+						{
+							"key": "bloodType",
+							"value": null,
+							"description": "血型",
+							"disabled": true
+						},
+						{
+							"key": "schoolTag",
+							"value": null,
+							"description": "学校",
+							"disabled": true
+						},
+						{
+							"key": "intro",
+							"value": null,
+							"description": "简介",
+							"disabled": true
+						},
+						{
+							"key": "constellation",
+							"value": null,
+							"description": "星座",
+							"disabled": true
+						},
+						{
+							"key": "vocation",
+							"value": null,
+							"description": "职业",
+							"disabled": true
+						}
+					]
+				},
+				"description": "修改用户信息"
+			},
+			"response": []
+		},
+		{
+			"name": "退出",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:6666/user/userLogout?token=9ZKHJ2WV",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"user",
+						"userLogout"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "9ZKHJ2WV"
+						}
+					]
+				},
+				"description": "用户退出"
+			},
+			"response": []
+		},
+		{
+			"name": "注册",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:6666/user/register?userAccount=13335672188&userPassword=111111&nickName=事务注册",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"user",
+						"register"
+					],
+					"query": [
+						{
+							"key": "userAccount",
+							"value": "13335672188"
+						},
+						{
+							"key": "userPassword",
+							"value": "111111"
+						},
+						{
+							"key": "nickName",
+							"value": "事务注册"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改密码",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:6666/user/amendUserPassword?token=6PN5HRBQ&password=111111&newPassword=123456",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"user",
+						"amendUserPassword"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "6PN5HRBQ"
+						},
+						{
+							"key": "password",
+							"value": "111111"
+						},
+						{
+							"key": "newPassword",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取当前用户所有好友",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:6666/friend/getAllFriends?token=CBPE93F5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"friend",
+						"getAllFriends"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "CBPE93F5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除好友",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:6666/friend/deleteFriend?token=2UZ61F4L&friendId=10000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"friend",
+						"deleteFriend"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "2UZ61F4L"
+						},
+						{
+							"key": "friendId",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加好友",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:6666/friend/addFriends?token=CBPE93F5&friendId=10000&noteName=我的小号",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"friend",
+						"addFriends"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "CBPE93F5"
+						},
+						{
+							"key": "friendId",
+							"value": "10000"
+						},
+						{
+							"key": "noteName",
+							"value": "我的小号"
+						},
+						{
+							"key": "friendGroupsId",
+							"value": "",
+							"description": "分组id不发默认",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改好友昵称或分组",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:6666/friend/amendFriends?token=CBPE93F5&id=5&noteName=修改昵称",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"friend",
+						"amendFriends"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "CBPE93F5"
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"description": "好友主键id"
+						},
+						{
+							"key": "noteName",
+							"value": "修改昵称",
+							"description": "好友备注昵称"
+						},
+						{
+							"key": "friendGroupsId",
+							"value": "",
+							"description": "好友分组id",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取所有好友分组",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:6666/friend/getAllFriendGroups?token=CBPE93F5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"friend",
+						"getAllFriendGroups"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "CBPE93F5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改好友分组名称",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:6666/friend/amendFriendGroup?token=CBPE93F5&id=2&groupName=你好污",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"friend",
+						"amendFriendGroup"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "CBPE93F5"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"description": "分组id"
+						},
+						{
+							"key": "groupName",
+							"value": "你好污",
+							"description": "分组名称"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除用户分组",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:6666/friend/deleteFriendGroup?token=CBPE93F5&id=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"friend",
+						"deleteFriendGroup"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "CBPE93F5"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"description": "分组id"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增用户分组",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:6666/friend/addFriendGroup?token=CBPE93F5&groupName=我的二分组",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6666",
+					"path": [
+						"friend",
+						"addFriendGroup"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "CBPE93F5"
+						},
+						{
+							"key": "groupName",
+							"value": "我的二分组",
+							"description": "新增分组名称"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
